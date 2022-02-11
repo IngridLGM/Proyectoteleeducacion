@@ -7,19 +7,11 @@
    
     <h1>Iniciar Sesion </h1>
     <form [formGroup]="formGroup">
-        
-     <label for="usuario">Usuario: </label>
-        <input id="usuario" type="email"  formControlName="email" required maxlength="10" placeholder="Ingrese Usuario"required [(ngModel)]="usuario.email" />  
-        <label for="contrasenia">Contraseña: </label>
-        <input id="contrasenia" type="password" required maxlength="15" formControlName="password"placeholder="Ingrese Contraseña"[(ngModel)]="usuario.password"  />
+      
         <button class="btn btn-primary btn-ingresa m-2"(click)="ingrese()">Ingrese </button>
         <h6>Identifíquese usando: </h6>
         <button class="btn btn-info btn-google m-2"(click)="IngreseConGoogle()">Ingrese con Google</button>
     </form>
-   
-    <!-- <div class="form-group ">
-        <button (click)="Ingrese()" class="btn btn-lg btn-google">Google</button>
-    </div> -->
    
     <A href="#">Olvide mi contraseña</A>
 </div>
