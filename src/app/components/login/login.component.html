@@ -6,9 +6,9 @@
     <img class="avatar" src="assets/descarga.jpg"alt ="Logo">
    
     <h1>Iniciar Sesion </h1>
-    <form>
+    <form [formGroup]="formGroup">
         
-     <label for="usuario ">Usuario: </label>
+     <label for="usuario">Usuario: </label>
         <input id="usuario" type="email"  formControlName="email" required maxlength="10" placeholder="Ingrese Usuario"required [(ngModel)]="usuario.email" />  
         <label for="contrasenia">Contraseña: </label>
         <input id="contrasenia" type="password" required maxlength="15" formControlName="password"placeholder="Ingrese Contraseña"[(ngModel)]="usuario.password"  />
